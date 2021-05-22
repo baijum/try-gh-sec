@@ -21,5 +21,6 @@ jobs:
       - name: Test Sec
         env:
           REPO: ${{ secrets.REPO }}
+          REPO2: ${{ secrets.REPO2 }}
         run: |
           python3 sec.py
