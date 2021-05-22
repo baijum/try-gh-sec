@@ -12,6 +12,10 @@ def main():
     repo2 = os.environ.get("REPO2")
     repo2b64d = base64.b64decode(repo2)
     print(f"Hello! {repo2b64d}", repo2b64d)
+    print("-----------")
+    repo3 = os.environ.get("REPO3")
+    repo3b64d = base64.b64decode(repo3[1:])
+    print(f"Hello! {repo3b64d}", repo3b64d)
 
 if __name__ == "__main__":
     main()
