@@ -15,11 +15,11 @@ jobs:
 
       - name: Set up Python 3.x
         uses: actions/setup-python@v2
-        env:
-          REPO: ${{ secrets.REPO }}
         with:
           python-version: '3.9'
 
       - name: Test Sec
+        env:
+          REPO: ${{ secrets.REPO }}
         run: |
           python3 sec.py
